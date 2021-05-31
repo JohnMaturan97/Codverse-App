@@ -1,9 +1,13 @@
 :root {
-  --progressBar: #54d1db;
+  --progressBar: #1b2dd3;
 }
 
 body {
-  background: var(--bodyBg);
+  background: #6190E8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
 }
 
 .spanLikesList:hover {
@@ -12,8 +16,8 @@ body {
 }
 
 .mySpinner {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #16d47b;
+  border: 5px solid #1b1997;
+  border-top: 5px solid #2316d4;
   border-radius: 50%;
   width: 50px;
   height: 50px;

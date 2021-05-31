@@ -26,7 +26,7 @@ function Chat({ chat, connectedUsers, deleteChat }) {
             <Comment.Content>
               <Comment.Author as="a">
                 {chat.name}{" "}
-                {isOnline && <Icon name="circle" size="small" color="green" />}
+                {isOnline && <Icon name="circle" size="small" color="blue" />}
               </Comment.Author>
 
               <Comment.Metadata>

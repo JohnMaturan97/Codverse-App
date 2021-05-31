@@ -21,18 +21,18 @@
   max-width: 700px;
   padding: 14px 18px;
   margin: 6px 8px;
-  background-color: #5b5377;
+  background-color: #4560fc;
   border-radius: 16px 16px 0 16px;
-  border: 1px solid #443f56;
+  border: 1px solid #2850ff;
 }
 .otherBubble {
   min-width: 60px;
   max-width: 700px;
   padding: 14px 18px;
   margin: 6px 8px;
-  background-color: #6c8ea4;
+  background-color: #5062ff;
   border-radius: 16px 16px 16px 0;
-  border: 1px solid #54788e;
+  border: 1px solid #2500f8;
 }
 .own {
   align-self: flex-end;
@@ -43,5 +43,5 @@
 span.own,
 span.other {
   font-size: 14px;
-  color: grey;
+  color: rgb(255, 67, 67);
 }

@@ -17,7 +17,7 @@ function SideMenu({
       <List style={{ paddingTop: "1rem" }} size="big" verticalAlign="middle" selection>
         <Link href="/">
           <List.Item active={isActive("/")}>
-            <Icon name="home" size="large" color={isActive("/") && "teal"} />
+            <Icon name="home" size="large" color={isActive("/") && "blue"} />
             <List.Content>{pc && <List.Header content="Home" />}</List.Content>
           </List.Item>
         </Link>
@@ -27,7 +27,7 @@ function SideMenu({
             <Icon
               name={unreadMessage ? "hand point right" : "mail outline"}
               size="large"
-              color={(isActive("/messages") && "teal") || (unreadMessage && "orange")}
+              color={(isActive("/messages") && "teal") || (unreadMessage && "red")}
             />
             <List.Content>{pc && <List.Header content="Messages" />}</List.Content>
           </List.Item>
@@ -39,7 +39,7 @@ function SideMenu({
               name={unreadNotification ? "hand point right" : "bell outline"}
               size="large"
               color={
-                (isActive("/notifications") && "teal") || (unreadNotification && "orange")
+                (isActive("/notifications") && "teal") || (unreadNotification && "red")
               }
             />
             <List.Content>{pc && <List.Header content="Notifications" />}</List.Content>
@@ -52,7 +52,7 @@ function SideMenu({
             <Icon
               name="user"
               size="large"
-              color={router.query.username === username && "teal"}
+              color={router.query.username === username && "blue"}
             />
             <List.Content>{pc && <List.Header content="Account" />}</List.Content>
           </List.Item>

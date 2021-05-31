@@ -12,7 +12,7 @@ const HeadTags = () => (
       <link rel="stylesheet" type="text/css" href="/styles.css" />
       <link rel="stylesheet" type="text/css" href="/nprogress.css" />
 
-      <title>Born To Code</title>
+      <title>Codeverse</title>
     </Head>
   </>
 );

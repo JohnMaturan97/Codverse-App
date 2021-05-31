@@ -51,7 +51,7 @@ export const PlaceHolderSuggestions = () => (
             size="small"
             icon="add user"
             content="Follow"
-            color="twitter"
+            color="github"
           />
         </Card.Content>
       </Card>
