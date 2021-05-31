@@ -93,15 +93,14 @@ const Instructions = ({ username }) => (
       <Icon name="help" />
       <List.Content>
         <List.Header>
-          If you do not like this popup to appear when you receive a new message:
-        </List.Header>
+          You can disable this feature by: 
+         </List.Header>
       </List.Content>
     </List.Item>
 
     <List.Item>
       <Icon name="hand point right" />
-      <List.Content>
-        You can disable it by going to
+      <List.Content> Navigating to your
         <Link href={`/${username}`}>
           <a> Account </a>
         </Link>
@@ -111,12 +110,12 @@ const Instructions = ({ username }) => (
 
     <List.Item>
       <Icon name="hand point right" />
-      Inside the menu,there is an setting named: Show New Message Popup?
+       Inside the menu, there is a setter called : Show New Message Popup?
     </List.Item>
 
     <List.Item>
       <Icon name="hand point right" />
-      Just toggle the setting to disable/enable the Message Popup to appear.
+       Just toggle it ON /OFF for personal preferences.
     </List.Item>
   </List>
 );
