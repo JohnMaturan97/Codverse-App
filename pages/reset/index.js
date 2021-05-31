@@ -43,11 +43,11 @@ function ResetPage() {
           success
         />
       ) : (
-        <Message attached icon="settings" header="Reset Password" color="teal" />
+        <Message attached icon="settings" header="Reset Password" color="blue" />
       )}
 
       <Form loading={loading} onSubmit={resetPassword} error={errorMsg !== null}>
-        <Message error header="Oops!" content={errorMsg} />
+        <Message error header="System Error! Try Again!" content={errorMsg} />
 
         <Segment>
           <Form.Input

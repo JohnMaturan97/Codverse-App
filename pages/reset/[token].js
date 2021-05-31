@@ -55,19 +55,19 @@ function TokenPage() {
           attached
           success
           size="large"
-          header="Password reset successfull"
+          header="Password was reset successfully"
           icon="check"
           content="Login Again"
           style={{ cursor: "pointer" }}
           onClick={() => router.push("/login")}
         />
       ) : (
-        <Message attached icon="settings" header="Reset Password" color="teal" />
+        <Message attached icon="settings" header="Reset Password" color="blue" />
       )}
 
       {!success && (
         <Form loading={loading} onSubmit={resetPassword} error={errorMsg !== null}>
-          <Message error header="Oops!" content={errorMsg} />
+          <Message error header="System Error! Try Again!" content={errorMsg} />
 
           <Segment>
             <Form.Input
@@ -93,6 +93,7 @@ function TokenPage() {
               onChange={handleChange}
               value={field2}
               required
+              color='blue'
             />
 
             <Divider hidden />
