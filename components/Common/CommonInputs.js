@@ -65,8 +65,8 @@ function CommonInputs({
             icon="attention"
             info
             size="small"
-            color="orange"
             header="Your social network is your net worth!"
+            color="blue"
           />
         </>
       )}

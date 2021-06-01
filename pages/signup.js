@@ -17,8 +17,8 @@ function Signup() {
     password: "",
     about: "",
     linkedin: "",
-    github: "",
     youtube: "",
+    github: "",
     instagram: ""
   });
 
@@ -110,7 +110,7 @@ function Signup() {
       <Form loading={formLoading} error={errorMsg !== null} onSubmit={handleSubmit}>
         <Message
           error
-          header="System Error! Try Again!"
+          header="System Erro! Try Again!"
           content={errorMsg}
           onDismiss={() => setErrorMsg(null)}
         />

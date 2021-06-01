@@ -42,12 +42,13 @@ function Login() {
   return (
     <>
       <HeaderMessage />
-      <Form loading={formLoading} error={errorMsg !== null} onSubmit={handleSubmit}>
+      <Form loading={formLoading} error={errorMsg !== null} onSubmit={handleSubmit} color='blue'>
         <Message
           error
           header="System Error! Try Again!"
           content={errorMsg}
           onDismiss={() => setErrorMsg(null)}
+          color='blue'
         />
 
         <Segment>
@@ -62,6 +63,7 @@ function Login() {
             icon="envelope"
             iconPosition="left"
             type="email"
+            color='blue'
           />
 
           <Form.Input
@@ -71,11 +73,13 @@ function Login() {
             value={password}
             onChange={handleChange}
             fluid
+            color='blue'
             icon={{
               name: "eye",
               circular: true,
               link: true,
               onClick: () => setShowPassword(!showPassword)
+              
             }}
             iconPosition="left"
             type={showPassword ? "text" : "password"}

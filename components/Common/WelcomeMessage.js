@@ -34,7 +34,7 @@ export const FooterMessage = () => {
       ) : (
         <>
           <Message attached="bottom" info>
-            <Icon name="lock" color="orange" />
+            <Icon name="lock" />
             <Link href="/reset">Forgot Password?</Link>
           </Message>
 
