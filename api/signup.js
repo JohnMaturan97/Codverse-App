@@ -38,10 +38,10 @@ router.post("/", async (req, res) => {
     email,
     username,
     password,
-    about,
+    bio,
     linkedin,
-    github,
     youtube,
+    github,
     instagram
   } = req.body.user;
 
@@ -72,13 +72,13 @@ router.post("/", async (req, res) => {
     let profileFields = {};
     profileFields.user = user._id;
 
-    profileFields.about = about;
+    profileFields.bio = bio;
 
     profileFields.social = {};
     if (linkedin) profileFields.social.linkedin = linkedin;
-    if (github) profileFields.social.github = github;
-    if (instagram) profileFields.social.instagram = instagram;
     if (youtube) profileFields.social.youtube = youtube;
+    if (instagram) profileFields.social.instagram = instagram;
+    if (github) profileFields.social.github = github;
 
     await new ProfileModel(profileFields).save();
     await new FollowerModel({ user: user._id, followers: [], following: [] }).save();
@@ -97,4 +97,3 @@ router.post("/", async (req, res) => {
 });
 
 module.exports = router;
-

@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Button, Message, TextArea, Divider } from "semantic-ui-react";
 
 function CommonInputs({
-  user: { about, linkedin, instagram, youtube, github },
+  user: { bio, linkedin, instagram, youtube, github },
   handleChange,
   showSocialLinks,
   setShowSocialLinks
@@ -12,10 +12,10 @@ function CommonInputs({
       <Form.Field
         required
         control={TextArea}
-        name="about"
-        value={about}
+        name="bio"
+        value={bio}
         onChange={handleChange}
-        placeholder="About (Required)"
+        placeholder="bio"
       />
 
       <Button
@@ -65,8 +65,7 @@ function CommonInputs({
             icon="attention"
             info
             size="small"
-            header="Your social network is your net worth!"
-            color="blue"
+            header="Your Social Network is your NET Worth!"
           />
         </>
       )}

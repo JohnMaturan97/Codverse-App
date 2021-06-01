@@ -15,14 +15,14 @@ function Signup() {
     name: "",
     email: "",
     password: "",
-    about: "",
+    bio: "",
     linkedin: "",
     youtube: "",
     github: "",
     instagram: ""
   });
 
-  const { name, email, password, about } = user;
+  const { name, email, password, bio } = user;
 
   const handleChange = e => {
     const { name, value, files } = e.target;
@@ -51,7 +51,7 @@ function Signup() {
   const inputRef = useRef();
 
   useEffect(() => {
-    const isUser = Object.values({ name, email, password, about }).every(item =>
+    const isUser = Object.values({ name, email, password, bio }).every(item =>
       Boolean(item)
     );
     isUser ? setSubmitDisabled(false) : setSubmitDisabled(true);
@@ -110,7 +110,7 @@ function Signup() {
       <Form loading={formLoading} error={errorMsg !== null} onSubmit={handleSubmit}>
         <Message
           error
-          header="System Erro! Try Again!"
+          header="Oops!"
           content={errorMsg}
           onDismiss={() => setErrorMsg(null)}
         />
